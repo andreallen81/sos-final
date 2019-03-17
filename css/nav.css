@@ -1,0 +1,122 @@
+ /* //////////////////////////////////////////
+ navigation styles */
+
+ .fixed__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1500;    
+    text-align: center;
+  }
+ 
+  .fixed__menu__content {
+   position: absolute;
+   text-align: center;
+   width: 100%;
+   height: 200rem;
+   background-image: linear-gradient(to right bottom,
+   rgba(187, 71, 71, 1),
+     rgba(100, 15, 15, 1));
+     top:100%;
+   z-index: 2000;
+    /* display: none; */
+    transform: scale(1, 0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: top;
+  }
+ 
+  .fixed__menu__content ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     margin-top: 30rem;
+  }
+ .nav__button {
+   display: none;
+ }
+ 
+ .nav__button__label {
+   position: absolute;
+   top: 5rem;
+   right: 5rem;
+   z-index: 2000;
+   height: 3.5rem;
+   padding: .5rem;
+   display: flex;
+   align-items: center;
+   background: rgb(230, 230, 230);
+   border-radius: .5rem;
+   cursor: pointer;
+ }
+ 
+ .nav__button__label span,
+ .nav__button__label::before,
+ .nav__button__label::after {
+   display: block;
+   background-image: linear-gradient(to right bottom,
+   rgba(187, 71, 71, 1),
+   rgba(100, 15, 15, 1));
+   height: .3rem;
+   width: 2.5rem;
+   border-radius: .2rem;
+   position: relative;
+ }
+ 
+ .nav__button__label::before,
+ .nav__button__label::after {
+   content: "";
+   position: absolute;
+ }
+ 
+ .nav__button__label::before {
+   bottom: .5rem;
+ }
+ 
+ .nav__button__label::after {
+   top: .5rem;
+ }
+ 
+  .fixed__menu__content li {
+   margin-bottom: 1rem;
+ }
+ 
+ .fixed__menu__content ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 3.5rem;
+   text-transform: uppercase;
+   opacity: 0;
+   transition: opacity 250ms ease-in-out;
+ }
+ 
+ 
+  .fixed__menu__content ul li a:link, .fixed__menu__content ul li a:visited {
+ 
+ } 
+ 
+ .fixed__menu__content ul li a:hover, .fixed__menu__content ul li a:active {
+   
+ } 
+ 
+ a:hover {
+   text-decoration: none;
+  
+ }
+ 
+ .nav__button:checked ~ nav {
+ 
+   transform: scale(1, 1);
+ }
+ 
+ .nav__button:checked ~ nav a {
+   opacity: 1;
+   transition: opacity 250ms ease-in-out 250ms;
+ }
+ 
+ ::selection {
+   background-color: rgba(187, 71, 71, 1);
+   color: #fff;
+ }
+
+ 

@@ -1,0 +1,81 @@
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Purpose */
+
+.purpose-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 3rem;
+    grid-template-columns: 50% 50%; 
+    margin-top: 2rem;
+  }
+  
+  .purpose-section .purpose .main__big-title3 {
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background-image: linear-gradient(to right, rgba(187, 71, 71, 0.8), rgba(100, 15, 15, 0.8));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 8rem;
+    text-align: center;
+    transition: all .3s;
+    margin-top: 0;
+   }
+  
+  .purpose-section .purpose .purpose-row {
+    max-width: 175rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 auto;
+  
+  }
+  
+  .purpose-section .purpose .profile .profile__content p {
+    color: #868686;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    width: 60rem;
+  }
+  
+  .purpose-section .purpose .purpose-row .purpose-col-1-of-2 {
+    display: grid;
+   padding-right: 2rem;
+  }
+  
+  .purpose-section .purpose .purpose-row .purpose-col-1-of-2 .col__title {
+    display: grid;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .purpose-section .purpose .profile {
+   display: inline-block;
+  }
+  
+  .purpose-section .purpose .profile .profile-image-box .profile-images {
+    width: 12rem;
+    height: 12rem;
+    margin: 2.5rem;
+    float: left;
+  }
+  
+  .purpose-section .purpose .profile .profile__content .profile__title {
+    font-size: 1.8rem;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, rgba(187, 71, 71, 0.8), rgba(100, 15, 15, 0.8));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .purpose-section .purpose .profile .profile__content p {
+    color: #868686;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    width: 100%;
+  }
+  
+  .purpose-section .purpose .profile .purpose-btn {
+    margin-left: -15rem;
+    margin-top: 5rem;
+   }
